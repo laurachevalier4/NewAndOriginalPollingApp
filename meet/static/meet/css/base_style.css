@@ -1,0 +1,93 @@
+/*font-family: 'Titillium Web', sans-serif;
+font-family: 'Dosis', sans-serif;
+font-family: 'Catamaran', sans-serif;*/
+
+body {
+  margin: 0;
+  padding: 0;
+  background: url('../images/earth-bg.jpg') fixed no-repeat center center;
+}
+
+#brand-title, #brand-title a {
+  color: #552255;
+  font-size: 1.2em;
+  font-family: 'Cherry Swash', cursive;
+  font-weight: bold;
+  margin-left: .5em;
+}
+
+#container {
+  width: 100%;
+  padding-top: 4px; /* push image down below nav bar */
+}
+
+/* Navigation styles */
+#navigation {
+  font-family: 'Dosis', sans-serif;
+  position: fixed;
+  margin: auto;
+  top: 0;
+  left: 0;
+  height: 65px;
+  background: rgba(255, 255, 255, .6);
+  width: 100%;
+}
+
+.nav-list-all {
+  margin-top: 1em;
+  margin-left: 1em;
+}
+
+.nav-list {
+  float: left;
+  margin-left: 2em;
+}
+
+.nav-list a {
+  font-family: 'Dosis', sans-serif;
+  color: #552255;
+  text-decoration: none;
+}
+
+.nav-list a:hover {
+  text-decoration: none;
+  color: white;
+}
+
+ul {
+  list-style-type: none;
+  margin-left: 0;
+  padding-left: 0;
+}
+
+li {
+  font-family: Raleway, Helvetica, sans-serif;
+  font-size: 1.3em;
+  line-height: 1.5em;
+  font-weight: normal;
+}
+
+.message p {
+  color: #4444DD;
+  text-align: center;
+  margin-top: 1em;
+  background: rgba(255, 255, 255, .6);
+  padding: .5em;
+  margin-right: 2em;
+  margin-bottom: 2em;
+  font-family: 'Dosis', sans-serif;
+  font-size: 1.1em;
+  border-radius: 1em;
+}
+
+.login-panel {
+  margin-right: 2em;
+}
+
+.login-form table {
+  padding: 1em;
+  margin-right: 0em;
+  font-family: 'Dosis', sans-serif;
+  font-size: 1.1em;
+  width: 100%;
+}

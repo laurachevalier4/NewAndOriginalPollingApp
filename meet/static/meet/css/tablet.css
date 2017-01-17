@@ -1,0 +1,60 @@
+body {
+  margin: 2em;
+  margin-top: 3em;
+  margin-left: 1em;
+  width: 100%;
+}
+
+.question-text {
+  font-size: 2em;
+  color: #552255;
+  clear: both;
+}
+
+.question-detail, form, .results {
+  background: rgba(255, 255, 255, .6);
+  padding: 1em;
+  margin-right: 2em;
+  font-family: 'Dosis', sans-serif;
+  font-size: 1.1em;
+}
+
+#container {
+  width: 100%;
+  padding-top: 60px; /* push image down below nav bar */
+}
+
+#navigation {
+  position: fixed;
+  margin: auto;
+  top: 0;
+  left: 0;
+  height: 60px;
+  background: rgba(255, 255, 255, .8);
+  width: 100%;
+}
+
+ul {
+  list-style-type: none;
+  margin-left: 0;
+  padding-left: 0;
+}
+
+li {
+  font-family: Raleway, Helvetica, sans-serif;
+  font-size: 1.3em;
+  line-height: 1.5em;
+  font-weight: normal;
+}
+
+.login-panel {
+  margin-right: 2em;
+}
+
+.login-form table {
+  padding: 1em;
+  margin-right: 0em;
+  font-family: 'Dosis', sans-serif;
+  font-size: 1.1em;
+  width: 100%;
+}

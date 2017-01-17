@@ -1,0 +1,41 @@
+To do:
+- create user login
+- validate user input for profile (e.g. valid location)
+- user should only be able to vote if logged in... otherwise can view everything
+- separate style sheets for different templates
+- test with more than 3 choices (especially with mobile layout)
+- ** only display results if user has voted or is owner. Send data to vote model on submit so we can test if a user has voted for a given question and get the info about what users have voted for a particular question; AND take away ability to vote on a question that's already been voted on
+- fix messy css
+- fix admin Vote section of Profile
+
+Ideas for focus:
+- Small business owners/entrepreneurs to get feedback and figure out what types of feedback they're getting from what types of people; for people to find their target audience or to find what is most appealing to the audience they want
+  - pay to see responses (all questions/answers? filtered to only those with certain keywords?) of users whose profiles fit the target audience
+  - or just because they want to know
+  - numbers intriguing because they're immediate and give a lot of info
+  - get extra points by recruiting people to join
+  - open/closed surveys and friends
+  - mostly single questions so that people stay entertained, all random unrelated questions
+    - option to go through questions of a certain category/search based on category and tags
+  - pay more for:
+    - more questions (up to a point), and pay for a certain length of time (up to a point)
+    - survey style: people would also get disproportionately more points for answering surveys as opposed to single questions
+    - have private access to the information for longer (as in, a sealed archive), before being added to the public archives (there will always be further refinements on general topics, so private info will still be valuable despite a mass of public info)
+    - better visualization?
+      - pie chart would normally be able to show percentages for (select by:) overall, by gender (a chart men a chart for women), by age (e.g. view chart for 18-25 y/o's), and by country
+        - default to general pie chart (41% of people said #1, 59% said #2)
+        - give percentage of respondents who fall into that classification
+        - disclaimer that shows the demographics of ALL site users so that people don't make assumptions based on equally distributed users across given demographics (keep it generic!)
+        - view stats based on question (the most popular demographic identity for this answer was ___, and be sure to adjust for shifts in proportions of users of different demographics, or make them known (e.g. 70% of voters were women, but 80% of women voted ___))
+        - for countries: colors represent different answers. color a map based on the most popular answer for that country. advanced stats would allow you to look at each country specifically (gender stats, ages, etc. for that country alone)
+  - archives:
+    - determine changes over time; trending vs. fad, societal changes
+    - all results visible
+  - results normally shown immediately after answering
+    - no way to distinguish between questions whose stats you can see after voting and questions whose stats you can only see when they're archived (because companies paid for them to be private for longer)
+  - comment sections:
+    - default to have it off. BUT an option; give the question asker admin status limited to that question, in addition to regular site admins
+  - blacklist of words you can't include in your questions
+  - admins for less obvious stuff ^
+- pay to ask a question or use points gathered from answering other questions
+- need some form of rewards system. Is points and badges enough? What can people do with these points (do they only use points to pay to ask a question? That might be sufficient

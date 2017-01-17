@@ -1,0 +1,57 @@
+body {
+  margin: 2em;
+  margin-top: 3em;
+  margin-left: 1em;
+  width: 100%;
+}
+
+.question-text {
+  font-size: 2em;
+  color: #552255;
+  clear: both;
+  font-family: 'Dosis', sans-serif;
+}
+
+.vote-form {
+  float: left;
+  width: 100%;
+  margin-top: 2em;
+  margin-bottom: 1.5em;
+  background: rgba(255, 255, 255, .7);
+}
+
+.question-detail, form, .results {
+  border-radius: 1em;
+  background: rgba(255, 255, 255, .6);
+  padding: 1em;
+  margin-right: 2em;
+  font-family: 'Dosis', sans-serif;
+  font-size: 1.1em;
+}
+
+input.btn-vote {
+  background: rgba(255, 255, 255, .6);
+  padding: .5em;
+  font-family: 'Dosis', sans-serif;
+  font-size: 1.1em;
+}
+
+.question-detail {
+  border-radius: 1em;
+  background: rgba(255, 255, 255, .6);
+}
+
+.results, .results ul li {
+  font-size: 1.1em;
+  font-family: 'Dosis', sans-serif;
+}
+
+hr {
+    display: block;
+    width: 90%;
+    margin-top: 2em;
+    margin-bottom: 0;
+    margin-left: auto;
+    margin-right: auto;
+    border-width: 1px;
+}

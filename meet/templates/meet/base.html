@@ -1,0 +1,45 @@
+{% load staticfiles %}
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Auth Demo</title>
+        <!-- Core CSS - Include with every page -->
+        <link href="{% static 'meet/css/bootstrap.min.css' %}" rel="stylesheet">
+
+        <link rel="stylesheet" type="text/css" href="{% static 'meet/css/base_style.css' %}"/>
+
+        <link rel="stylesheet" media="only screen and (max-width: 600px)" href="{% static 'meet/css/mobile.css' %}">
+
+        <link rel="stylesheet" media="only screen and (min-width: 601px) and (max-width: 960px)" href="{% static 'meet/css/tablet.css' %}">
+
+        <link rel="stylesheet" type="text/css" media="only screen and (min-width: 961px)" href="{% static 'meet/css/style.css' %}"/>
+
+        <link href="https://fonts.googleapis.com/css?family=Catamaran|Cherry+Swash|Dosis|Titillium+Web" rel="stylesheet">
+    </head>
+    <body>
+      <div id="container">
+        <div id="navigation">
+          <ul class="nav-list-all">
+            <li class="nav-list" id="brand-title"><a href="{% url 'meet:index' %}">Know Thy Neighbor</a></li>
+            <li class="nav-list"><a href="{% url 'meet:index' %}">Home</a></li>
+            <li class="nav-list"><a href="{% url 'meet:index' %}">Account</a></li>
+          </ul>
+        </div> <!-- close #navigation -->
+
+        <div id="content">
+          {% block content %}
+          {% endblock %}
+        </div>
+      </div>
+
+    <!-- Core Scripts - Include with every page -->
+    <script src = "{% static 'meet/js/jquery.min.js' %}"></script>
+    <script src = "{% static 'meet/js/bootstrap.min.js' %}"></script>
+    <script src = "{% static 'meet/js/custom.js' %}"></script>
+    {% block javascript %}
+    {% endblock %}
+  </body>
+</html>

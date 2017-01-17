@@ -1,0 +1,31 @@
+{% load meet_extras %}
+
+<div class="question-detail outer">
+  <h1 id="{{ question.id }}" class="question-text">{{ question.question_text }}</h1>
+
+  {% if error_message and question.id == question_id %}<p><strong>{{ error_message }}</strong></p>{% endif %}
+  {% has_answered_question profile=user.profile question_id=question.id as answered %}
+  {% if not answered %}
+  <form class="vote-form" action="{% url 'meet:vote' question.id %}" method="post">
+    {% csrf_token %}
+      {% for choice in question.choice_set.all %}
+      <input type="radio" name="choice" id="choice{{ forloop.counter }}" value="{{ choice.id }}" />
+      <label for="choice{{ forloop.counter }}">{{ choice.choice_text }}</label><br />
+      {% endfor %}
+      {% if user.is_authenticated %}
+      <input class="btn-vote" type="submit" value="Vote" />
+      {% endif %}
+  </form>
+  {% endif %}
+  {% if answered %}
+  <div class="results">
+    <ul id="results"+{{question.id}} style="display: block;">
+      <li style="font-size: 1.4em;">Results: </li>
+    <!-- If user has voted, display the results... Write a function that determines whether a user has voted on a given survey or not -->
+    {% for choice in question.choice_set.all %}
+        <li>{{ choice.choice_text }} -- {{ choice.vote_set.all.count }} vote{{ choice.vote_set.all|pluralize }}</li>
+    {% endfor %}
+    </ul>
+  </div>
+  {% endif %}
+</div>

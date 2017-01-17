@@ -1,0 +1,39 @@
+{% extends "meet/base.html" %}
+{% block content %}
+{% load static %}
+
+<link href="https://fonts.googleapis.com/css?family=Catamaran|Dosis|Cherry+Swash|Titillium+Web" rel="stylesheet">
+<div id="question-div">
+{% if latest_survey_list %}
+    <ul style="margin-top: 2em;">
+    {% for survey in latest_survey_list %}
+      {% for question in survey.question_set.all %}
+      <div class="question-detail">
+        {% include "meet/detail.html" %}
+      </div>
+        <hr>
+      {% endfor %}
+      <br>
+    {% endfor %}
+    </ul>
+{% else %}
+    <p>No polls are available.</p>
+{% endif %}
+</div>
+
+<!-- Shouldn't need to reload jquery here... loaded in base.html -->
+<script src = "{% static 'meet/js/jquery.min.js' %}"></script>
+<script>
+$(document).ready(function () {
+  var question_id = "{{ view.question_id }}";
+  var error_msg="{{ error_message }}";
+  if (error_msg) { // jump to correct question when user gives no answer
+    question_id = "{{ question_id }}";
+  }
+  if (!isNaN(question_id) && question_id) {
+    var position = $('#' + question_id).position().top;
+    $(document).scrollTop(position-40);
+  }
+});
+</script>
+{% endblock %}
