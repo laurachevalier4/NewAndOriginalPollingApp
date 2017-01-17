@@ -39,10 +39,6 @@ class VoteInline(admin.TabularInline):
     model = Vote
     extra = 3
 
-# class ProfileVoteInline(NestedStackedInline):
-#     model = Profile.votes.through
-#     inlines = [VoteInline]
-
 class ProfileAdmin(admin.ModelAdmin):
     model = Profile
 

@@ -23,7 +23,7 @@
       <li style="font-size: 1.4em;">Results: </li>
     <!-- If user has voted, display the results... Write a function that determines whether a user has voted on a given survey or not -->
     {% for choice in question.choice_set.all %}
-        <li>{{ choice.choice_text }} -- {{ choice.vote_set.all.count }} vote{{ choice.vote_set.all|pluralize }}</li>
+        <li>{{ choice.choice_text }} -- {{ choice.num_votes }} vote{{ choice.num_votes|pluralize }}</li>
     {% endfor %}
     </ul>
   </div>
