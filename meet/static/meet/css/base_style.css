@@ -41,6 +41,8 @@ body {
 .nav-list {
   float: left;
   margin-left: 2em;
+  font-size: 1.3em;
+  line-height: 1.5em;
 }
 
 .nav-list a {
@@ -61,9 +63,9 @@ ul {
 }
 
 li {
-  font-family: Raleway, Helvetica, sans-serif;
-  font-size: 1.3em;
-  line-height: 1.5em;
+  font-family: 'Dosis', sans-serif;
+  font-size: 1em;
+  line-height: 1em;
   font-weight: normal;
 }
 
@@ -92,6 +94,8 @@ li {
   width: 100%;
 }
 
-p {
+h1 {
   font-family: 'Dosis', sans-serif;
+  color: #552255;
+  line-height: 1.5em;
 }

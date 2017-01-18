@@ -1,11 +1,9 @@
 {% extends "meet/base.html" %}
 {% block content %}
-    {% if form.errors %}
-<p>Your username and password didn't match. Please try again.</p>
-{% endif %}
-
+{% if form.errors %}
+<div class="message"><p>Your username and password didn't match. Please try again.</p></div>
+{% elif next %}
 <div class="message">
-{% if next %}
     {% if user.is_authenticated %}
     <p>Your account doesn't have access to this page. To proceed,
     please login with an account that has access.</p>
