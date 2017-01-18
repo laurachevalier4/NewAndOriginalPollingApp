@@ -52,6 +52,8 @@ class ProfileAdmin(admin.ModelAdmin):
         ('Activity', {'fields': ['points']})
     ]
 
+    list_display = ('user', 'points')
+
 # class UserAdmin(NestedModelAdmin):
 #     inlines = [ProfileInline]
 
