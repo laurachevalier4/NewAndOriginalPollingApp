@@ -128,3 +128,8 @@ STATICFILES_DIRS = [
 ]
 
 LOGIN_REDIRECT_URL = '/meet' # index view
+
+"""
+REGISTRATION
+"""
+ACCOUNT_ACTIVATION_DAYS = 7 # One-week activation window

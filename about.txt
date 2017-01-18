@@ -1,5 +1,6 @@
 To do:
 - create user registration
+  - read about forms and figure out what the meta class does in UserProfileRegistrationForm
 - validate user input for profile (e.g. valid location)
 - user should only be able to vote if logged in... otherwise can view everything
 - separate style sheets for different templates

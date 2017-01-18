@@ -4,17 +4,22 @@ from __future__ import unicode_literals
 from django.shortcuts import get_object_or_404, render
 from django.http import HttpResponseRedirect
 from django.urls import reverse
+from django.core.urlresolvers import reverse_lazy
 from django.utils import timezone
 from django.views import generic
 
 from django.db.models import F, Count
 
-from django.contrib.auth import authenticate, login
+from django.contrib.auth import authenticate, login, get_user_model
 from django.contrib.auth.decorators import login_required
 from django.contrib.auth.models import User, Group, Permission
 from django.contrib.contenttypes.models import ContentType
 
 from .models import Choice, Question, Survey, Vote, Profile
+
+from registration.forms import RegistrationForm
+from registration.views import RegistrationView
+
 
 """
 ListView displays a list of objects

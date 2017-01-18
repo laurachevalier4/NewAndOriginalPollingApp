@@ -1,0 +1,8 @@
+{% extends 'meet/base.html' %}
+{% block content %}
+<form style="margin-top: 50px; font-family: 'Dosis', sans-serif;" method="POST" action="{% url 'meet:registration_register' %}">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <input type="submit">
+</form>
+{% endblock %}

@@ -25,7 +25,9 @@
           <ul class="nav-list-all">
             <li class="nav-list" id="brand-title"><a href="{% url 'meet:index' %}">Know Thy Neighbor</a></li>
             <li class="nav-list"><a href="{% url 'meet:index' %}">Home</a></li>
+            {% if user.is_authenticated %}
             <li class="nav-list"><a href="{% url 'meet:index' %}">Account</a></li>
+            {% endif %}
           </ul>
         </div> <!-- close #navigation -->
 
