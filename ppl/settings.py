@@ -133,3 +133,5 @@ LOGIN_REDIRECT_URL = '/meet' # index view
 REGISTRATION
 """
 ACCOUNT_ACTIVATION_DAYS = 7 # One-week activation window
+
+EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend' # emails will be printed to the console
